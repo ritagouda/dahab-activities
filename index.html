@@ -3,129 +3,192 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dahab Activities Guide</title>
+  <title>Dahab Activities Guide — Yoga, Diving, Desert Trips & Local Workshops</title>
+  <meta name="description" content="Dahab Activities Guide: discover yoga classes, diving & snorkeling trips, Sinai desert safaris, and local workshops. Book instantly via WhatsApp." />
+  <meta name="keywords" content="Dahab activities, Dahab yoga, Dahab diving, snorkeling Blue Hole, Sinai desert trip, Dahab workshops, Egypt travel" />
+  <meta property="og:title" content="Dahab Activities Guide" />
+  <meta property="og:description" content="Scan one QR to see yoga, diving, desert trips and local workshops in Dahab. Partner hostels welcome." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo_from_card.png" />
   <style>
-    :root{
-      --brand:#0ea5e9;
-      --brand-dark:#0284c7;
-      --ink:#0f172a;
-      --muted:#475569;
-      --bg:#f8fafc;
-      --card:#ffffff;
-      --accent:#10b981;
-    }
+    :root{--brand:#0ea5e9;--ink:#0f172a;--muted:#475569;--bg:#f8fafc;--card:#ffffff}
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-    a{color:var(--brand);text-decoration:none}
-    .shell{max-width:960px;margin:0 auto;padding:16px}
-    header{position:sticky;top:0;background:rgba(248,250,252,.9);backdrop-filter:blur(6px);border-bottom:1px solid #e2e8f0;z-index:20}
+    a{text-decoration:none}
+    .shell{max-width:1060px;margin:0 auto;padding:16px}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:blur(6px);border-bottom:1px solid #e2e8f0;z-index:20}
     .row{display:flex;align-items:center;gap:12px}
     .between{justify-content:space-between}
-    .logo{display:flex;align-items:center;gap:10px}
-    .logo-badge{width:36px;height:36px;border-radius:10px;background:#fff url('logo_from_card.png') center/cover no-repeat;}
-    .tag{font-size:12px;color:var(--muted)}
-    .hero{padding:24px 0 8px}
-    h1{margin:.2em 0 .1em;font-size:28px;letter-spacing:.2px}
-    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2e8f0;border-radius:999px;padding:8px 12px;background:#fff}
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
-    .filters{margin:14px 0;display:flex;flex-wrap:wrap;gap:8px}
-    .fbtn{border:1px solid #e2e8f0;background:#fff;padding:8px 12px;border-radius:10px;cursor:pointer}
-    .fbtn.active{background:var(--brand);border-color:var(--brand);color:#fff}
-    .card{grid-column:span 12;background:var(--card);border:1px solid #e2e8f0;border-radius:14px;padding:14px;display:flex;gap:12px}
-    @media(min-width:640px){.card{grid-column:span 6}}
-    @media(min-width:900px){.card{grid-column:span 4}}
-    .thumb{width:72px;height:72px;border-radius:12px;flex:0 0 auto;background:#e2e8f0;display:grid;place-items:center}
-    .title{margin:0 0 6px;font-weight:700}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-badge{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#0ea5e9,#14b8a6);display:grid;place-items:center;color:#fff;font-weight:700}
+    .brand-logo{height:40px;aspect-ratio:auto;display:block;object-fit:contain}
+    h1{margin:.4em 0 .2em;font-size:30px}
+    h2.section-title{margin:28px 0 6px;font-size:22px}
+    .sub{color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #e2e8f0;border-radius:16px;overflow:hidden}
+    @media(min-width:720px){.card{grid-column:span 6}}
+    @media(min-width:1000px){.card{grid-column:span 4}}
+    .cover{position:relative;height:180px;background:#e2e8f0}
+    .cover img{width:100%;height:100%;object-fit:cover;display:block}
+    .tagchip{position:absolute;left:12px;top:12px;background:#0009;color:#fff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .body{padding:14px}
+    .title{margin:0 0 6px;font-size:18px}
     .meta{font-size:13px;color:var(--muted)}
     .cta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:8px 12px;border:1px solid var(--brand);color:#fff;background:var(--brand);cursor:pointer}
-    .btn.alt{background:#fff;color:var(--brand)}
-    .section-title{margin:28px 0 12px;font-size:18px}
-    .partners{display:flex;gap:12px;flex-wrap:wrap}
-    .partner{border:1px dashed #cbd5e1;border-radius:10px;padding:10px 12px;background:#fff;font-size:13px;color:var(--muted)}
-    footer{margin:24px 0 36px;color:var(--muted);font-size:13px}
-    .stickybar{position:fixed;bottom:12px;left:0;right:0;display:flex;justify-content:center;pointer-events:none}
+    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:8px 12px;background:#0ea5e9;color:#fff}
+    .btn.alt{background:#0f172a;color:#fff}
+    footer{margin:32px 0;color:var(--muted);font-size:13px}
+    .stickybar{position:fixed;bottom:14px;left:0;right:0;display:flex;justify-content:center;pointer-events:none}
     .stickybar .bar{pointer-events:auto;display:flex;gap:10px;background:#ffffff;border:1px solid #e2e8f0;box-shadow:0 10px 30px rgba(15,23,42,.12);border-radius:999px;padding:8px 10px}
-    .badge{font-size:12px;padding:2px 8px;border-radius:999px;background:#ecfeff;color:#0369a1;border:1px solid #bae6fd}
+    .lead{max-width:760px}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Dahab Activities Guide",
+    "description": "Guide to yoga, diving, desert trips and local workshops in Dahab, Egypt with WhatsApp booking links.",
+    "publisher": {"@type": "Organization", "name": "Rita Gouda"}
+  }
+  </script>
 </head>
 <body>
   <header>
     <div class="shell row between">
-      <div class="logo">
-        <div class="logo-badge"></div>
+      <div class="brand">
+        <div class="brand-badge">DA</div>
         <div>
-          <strong>Dahab Activities Guide</strong><div class="tag">Scan once · Discover more</div>
+          <strong>Dahab Activities Guide</strong>
+          <div class="sub">Scan once · Discover more</div>
         </div>
       </div>
-      <div class="tag">Demo · Replace placeholders</div>
+      <img src="logo_from_card.png" alt="Rita Gouda logo" class="brand-logo" />
     </div>
   </header>
 
   <main class="shell">
-    <section class="hero">
-      <div class="pill">
-        <span>✨ Welcome to Dahab</span>
-        <span class="badge">Mobile‑first</span>
-        <span class="badge">QR Ready</span>
-      </div>
+    <section>
       <h1>All the good stuff in one QR</h1>
-      <p class="tag">Yoga • Diving • Desert Trips • Local Workshops — curated & updated. <strong>Partner hostel shown on this page.</strong></p>
+      <p class="sub lead">Discover curated activities in Dahab, Egypt. Find sunrise yoga at Lighthouse, snorkeling at the Blue Hole, Sinai desert jeep safaris, and hands‑on local workshops. Book instantly via WhatsApp and open maps in one tap.</p>
+    </section>
 
-      <div class="filters" id="filters">
-        <button class="fbtn active" data-filter="all">All</button>
-        <button class="fbtn" data-filter="yoga">Yoga & Wellness</button>
-        <button class="fbtn" data-filter="diving">Diving & Snorkeling</button>
-        <button class="fbtn" data-filter="desert">Desert & Safari</button>
-        <button class="fbtn" data-filter="events">Local Events & Workshops</button>
+    <!-- Yoga & Wellness section -->
+    <section aria-label="Yoga and Wellness in Dahab">
+      <h2 class="section-title">Yoga & Wellness in Dahab</h2>
+      <p class="sub lead">Morning vinyasa by the sea, sunset breathwork on Assalah beach, and gentle stretch sessions for all levels. Mats available and walk‑ins welcome.</p>
+      <div class="grid" id="yoga-cards">
+        <article class="card" data-activity="yoga">
+          <div class="cover">
+            <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1400&auto=format&fit=crop" alt="Sunrise yoga class by the sea in Dahab"/>
+            <span class="tagchip">Yoga & Wellness</span>
+          </div>
+          <div class="body">
+            <h3 class="title">Sunrise Yoga — Lighthouse</h3>
+            <div class="meta">Daily · 8:00 – 9:00 · Mats available</div>
+            <div class="cta">
+              <a class="btn" href="https://wa.me/201553621413?text=I'd%20like%20to%20book%20Sunrise%20Yoga" target="_blank">WhatsApp Book</a>
+              <a class="btn alt" href="https://maps.google.com?q=Lighthouse%20Dahab" target="_blank">Map</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Activities cards unchanged (placeholders remain) -->
+    <!-- Diving & Snorkeling section -->
+    <section aria-label="Diving and Snorkeling in Dahab">
+      <h2 class="section-title">Diving & Snorkeling</h2>
+      <p class="sub lead">World‑class reefs, clear water, and easy shore entries. Join a guided intro dive or hop on a shuttle to the Blue Hole with optional gear rental.</p>
+      <div class="grid" id="diving-cards">
+        <article class="card" data-activity="diving">
+          <div class="cover">
+            <img src="https://images.unsplash.com/photo-1544551763-7ef42032a164?q=80&w=1400&auto=format&fit=crop" alt="Snorkeling over coral reef at the Blue Hole Dahab"/>
+            <span class="tagchip">Diving & Snorkeling</span>
+          </div>
+          <div class="body">
+            <h3 class="title">Blue Hole Snorkel Shuttle</h3>
+            <div class="meta">Daily · 09:30 pickup · Gear rental available</div>
+            <div class="cta">
+              <a class="btn" href="https://wa.me/201553621413?text=Blue%20Hole%20Snorkel%20Shuttle" target="_blank">WhatsApp Book</a>
+              <a class="btn alt" href="https://maps.google.com?q=Blue%20Hole%20Dahab" target="_blank">Map</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <section>
+    <!-- Desert & Safari section -->
+    <section aria-label="Sinai Desert Trips">
+      <h2 class="section-title">Sinai Desert Trips</h2>
+      <p class="sub lead">Golden dunes, canyons, and starry skies. Sunset jeep rides with Bedouin tea stops and photo moments along the way.</p>
+      <div class="grid" id="desert-cards">
+        <article class="card" data-activity="desert">
+          <div class="cover">
+            <img src="https://images.unsplash.com/photo-1548786811-ff03c8e0873a?q=80&w=1400&auto=format&fit=crop" alt="Jeep driving through Sinai desert at sunset"/>
+            <span class="tagchip">Desert & Safari</span>
+          </div>
+          <div class="body">
+            <h3 class="title">Sinai Sunset Jeep Trip</h3>
+            <div class="meta">Wed & Fri · 16:00 – Sunset · Bedouin tea stop</div>
+            <div class="cta">
+              <a class="btn" href="https://wa.me/201553621413?text=Sinai%20Sunset%20Trip" target="_blank">WhatsApp Book</a>
+              <a class="btn alt" href="#">Itinerary</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Local Workshops & Events section -->
+    <section aria-label="Local Workshops and Events">
+      <h2 class="section-title">Local Workshops & Events</h2>
+      <p class="sub lead">Cook with locals, join drum circles by the sea, and explore creative meetups. Easy to join and perfect for rest days.</p>
+      <div class="grid" id="events-cards">
+        <article class="card" data-activity="events">
+          <div class="cover">
+            <img src="https://images.unsplash.com/photo-1482012790979-78c0620420f5?q=80&w=1400&auto=format&fit=crop" alt="Hands-on cooking workshop in Dahab"/>
+            <span class="tagchip">Local Workshops</span>
+          </div>
+          <div class="body">
+            <h3 class="title">Local Cooking Workshop</h3>
+            <div class="meta">Sat · 12:00 · Assalah kitchen</div>
+            <div class="cta">
+              <a class="btn" href="https://wa.me/201553621413?text=Cooking%20Workshop" target="_blank">WhatsApp Book</a>
+              <a class="btn alt" href="#">Menu</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Partner Hostels">
       <h2 class="section-title">Partner Hostels</h2>
-      <div class="partners">
-        <div class="partner">Your Hostel Logo Here</div>
-        <div class="partner">Supported by: <strong>[Partner Name]</strong></div>
-        <div class="partner">Scan at reception · Room door QR</div>
+      <div class="grid">
+        <div class="card" style="grid-column:span 6">
+          <div class="body">
+            <h3 class="title">Your Hostel Name</h3>
+            <div class="meta">QR available at reception · Room door stickers</div>
+          </div>
+        </div>
+        <div class="card" style="grid-column:span 6">
+          <div class="body">
+            <h3 class="title">Become a Partner</h3>
+            <div class="meta">Add your logo here. Guests discover more, faster.</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer>
-      <p><strong>Notes:</strong> All names above are examples/placeholders for demo purposes. Replace with real partners (e.g., yoga, diving, safari operators). WhatsApp links now use your number. Hostels get credit on this page.</p>
-      <p>Built with ❤ for Dahab · Fast, simple, offline‑friendly UI.</p>
+      <p>Demo visuals & sample text for presentation only. Replace with real partners and listings.</p>
     </footer>
   </main>
 
   <div class="stickybar">
     <div class="bar">
-      <a class="btn" href="https://wa.me/201553621413?text=Hi%20there%2C%20I%20scanned%20your%20Dahab%20QR%20and%20need%20help" target="_blank">WhatsApp Me</a>
-      <button class="btn alt" id="allbtn">Show All</button>
+      <a class="btn" href="https://wa.me/201553621413?text=I%20scanned%20the%20QR%20and%20need%20help" target="_blank">WhatsApp Me</a>
+      <a class="btn alt" href="#top">Top</a>
     </div>
   </div>
-
-  <script>
-    const filterButtons = document.querySelectorAll('.fbtn');
-    const cards = document.querySelectorAll('.card');
-    filterButtons.forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        filterButtons.forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const f = btn.dataset.filter;
-        cards.forEach(c=>{
-          if(f==='all' || c.dataset.activity===f){
-            c.style.display='flex';
-          } else {
-            c.style.display='none';
-          }
-        });
-      });
-    });
-    document.getElementById('allbtn').addEventListener('click',()=>{
-      document.querySelector('[data-filter="all"]').click();
-      window.scrollTo({top:0,behavior:'smooth'});
-    });
-  </script>
 </body>
 </html>
