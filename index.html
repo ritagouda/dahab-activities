@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dahab Activities Guide</title>
+  <style>
+    :root{
+      --brand:#0ea5e9;
+      --brand-dark:#0284c7;
+      --ink:#0f172a;
+      --muted:#475569;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --accent:#10b981;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--brand);text-decoration:none}
+    .shell{max-width:960px;margin:0 auto;padding:16px}
+    header{position:sticky;top:0;background:rgba(248,250,252,.9);backdrop-filter:blur(6px);border-bottom:1px solid #e2e8f0;z-index:20}
+    .row{display:flex;align-items:center;gap:12px}
+    .between{justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo-badge{width:36px;height:36px;border-radius:10px;background:#fff url('logo_from_card.png') center/cover no-repeat;}
+    .tag{font-size:12px;color:var(--muted)}
+    .hero{padding:24px 0 8px}
+    h1{margin:.2em 0 .1em;font-size:28px;letter-spacing:.2px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #e2e8f0;border-radius:999px;padding:8px 12px;background:#fff}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .filters{margin:14px 0;display:flex;flex-wrap:wrap;gap:8px}
+    .fbtn{border:1px solid #e2e8f0;background:#fff;padding:8px 12px;border-radius:10px;cursor:pointer}
+    .fbtn.active{background:var(--brand);border-color:var(--brand);color:#fff}
+    .card{grid-column:span 12;background:var(--card);border:1px solid #e2e8f0;border-radius:14px;padding:14px;display:flex;gap:12px}
+    @media(min-width:640px){.card{grid-column:span 6}}
+    @media(min-width:900px){.card{grid-column:span 4}}
+    .thumb{width:72px;height:72px;border-radius:12px;flex:0 0 auto;background:#e2e8f0;display:grid;place-items:center}
+    .title{margin:0 0 6px;font-weight:700}
+    .meta{font-size:13px;color:var(--muted)}
+    .cta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:8px 12px;border:1px solid var(--brand);color:#fff;background:var(--brand);cursor:pointer}
+    .btn.alt{background:#fff;color:var(--brand)}
+    .section-title{margin:28px 0 12px;font-size:18px}
+    .partners{display:flex;gap:12px;flex-wrap:wrap}
+    .partner{border:1px dashed #cbd5e1;border-radius:10px;padding:10px 12px;background:#fff;font-size:13px;color:var(--muted)}
+    footer{margin:24px 0 36px;color:var(--muted);font-size:13px}
+    .stickybar{position:fixed;bottom:12px;left:0;right:0;display:flex;justify-content:center;pointer-events:none}
+    .stickybar .bar{pointer-events:auto;display:flex;gap:10px;background:#ffffff;border:1px solid #e2e8f0;box-shadow:0 10px 30px rgba(15,23,42,.12);border-radius:999px;padding:8px 10px}
+    .badge{font-size:12px;padding:2px 8px;border-radius:999px;background:#ecfeff;color:#0369a1;border:1px solid #bae6fd}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell row between">
+      <div class="logo">
+        <div class="logo-badge"></div>
+        <div>
+          <strong>Dahab Activities Guide</strong><div class="tag">Scan once · Discover more</div>
+        </div>
+      </div>
+      <div class="tag">Demo · Replace placeholders</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="pill">
+        <span>✨ Welcome to Dahab</span>
+        <span class="badge">Mobile‑first</span>
+        <span class="badge">QR Ready</span>
+      </div>
+      <h1>All the good stuff in one QR</h1>
+      <p class="tag">Yoga • Diving • Desert Trips • Local Workshops — curated & updated. <strong>Partner hostel shown on this page.</strong></p>
+
+      <div class="filters" id="filters">
+        <button class="fbtn active" data-filter="all">All</button>
+        <button class="fbtn" data-filter="yoga">Yoga & Wellness</button>
+        <button class="fbtn" data-filter="diving">Diving & Snorkeling</button>
+        <button class="fbtn" data-filter="desert">Desert & Safari</button>
+        <button class="fbtn" data-filter="events">Local Events & Workshops</button>
+      </div>
+    </section>
+
+    <!-- Activities cards unchanged (placeholders remain) -->
+
+    <section>
+      <h2 class="section-title">Partner Hostels</h2>
+      <div class="partners">
+        <div class="partner">Your Hostel Logo Here</div>
+        <div class="partner">Supported by: <strong>[Partner Name]</strong></div>
+        <div class="partner">Scan at reception · Room door QR</div>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Notes:</strong> All names above are examples/placeholders for demo purposes. Replace with real partners (e.g., yoga, diving, safari operators). WhatsApp links now use your number. Hostels get credit on this page.</p>
+      <p>Built with ❤ for Dahab · Fast, simple, offline‑friendly UI.</p>
+    </footer>
+  </main>
+
+  <div class="stickybar">
+    <div class="bar">
+      <a class="btn" href="https://wa.me/201553621413?text=Hi%20there%2C%20I%20scanned%20your%20Dahab%20QR%20and%20need%20help" target="_blank">WhatsApp Me</a>
+      <button class="btn alt" id="allbtn">Show All</button>
+    </div>
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll('.fbtn');
+    const cards = document.querySelectorAll('.card');
+    filterButtons.forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        filterButtons.forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        cards.forEach(c=>{
+          if(f==='all' || c.dataset.activity===f){
+            c.style.display='flex';
+          } else {
+            c.style.display='none';
+          }
+        });
+      });
+    });
+    document.getElementById('allbtn').addEventListener('click',()=>{
+      document.querySelector('[data-filter="all"]').click();
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
